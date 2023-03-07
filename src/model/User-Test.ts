@@ -3,11 +3,11 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 @Entity()
 export class UserTest {
     @PrimaryGeneratedColumn()
-    public readonly id: number;
-    @Column({type: "int"})
+    public id: number;
+    @Column()
     public U_id: number;
-    @Column({type: "int"})
+    @Column()
     public T_id: number;
-    @Column({type: "int"})
+    @Column()
     public total: number;
 }

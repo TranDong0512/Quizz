@@ -3,11 +3,13 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 @Entity()
 export class Test {
     @PrimaryGeneratedColumn()
-    public readonly testId: number;
-    @Column({type: "varchar"})
+    public  testId: number;
+    @Column()
     public testName: string;
-    @Column({type:"int"})
+    @Column()
     public idNameCreate: number;
-    @Column({type:"int"})
+    @Column()
     public idCategory: number;
+    @Column()
+    public name: string;
 }

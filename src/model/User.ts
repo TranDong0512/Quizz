@@ -3,13 +3,13 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 @Entity()
 export class User {
     @PrimaryGeneratedColumn()
-    public readonly userId: number;
-    @Column({type: "varchar"})
+    public userId: number;
+    @Column()
     public userName: string;
-    @Column({type:"varchar"})
+    @Column()
     public userEmail:string;
-    @Column({type:"varchar"})
+    @Column()
     public userPassword: string;
-    @Column({type:"boolean",default: 0})
+    @Column()
     public role:boolean;
 }
