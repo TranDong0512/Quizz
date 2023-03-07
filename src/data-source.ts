@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
 
     password: "12345678",
 
-    database: "",
+    database: "quanlythi",
 
     synchronize: true,
 
