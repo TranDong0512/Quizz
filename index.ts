@@ -1,7 +1,7 @@
 import express from 'express';
 import {AppDataSource} from "./src/data-source";
 
-import cors from 'cors'
+import cors from "cors"
 import {router} from "./src/router/router";
 const PORT = 8080
 const app = express();

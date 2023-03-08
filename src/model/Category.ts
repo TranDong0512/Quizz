@@ -2,8 +2,8 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity()
 export class Category {
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn({type:"int"})
     public categoryId: number;
-    @Column()
+    @Column({type:"varchar"})
     public nameCategory: string;
 }

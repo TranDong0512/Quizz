@@ -1,5 +1,5 @@
 import { Category } from 'src/model/Category';
-import { AppDataSource } from './../data-source';
+import { AppDataSource } from '../data-source';
 class CategoryService {
     categoryRepository: any;
     constructor() {

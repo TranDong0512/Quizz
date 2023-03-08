@@ -5,7 +5,7 @@ export class Question {
     @PrimaryGeneratedColumn()
     public questionID: number;
     @Column()
-    public  questionName: string;
+    public questionName: string;
     @Column()
     public questionPoint: number
 }

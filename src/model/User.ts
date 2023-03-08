@@ -11,5 +11,5 @@ export class User {
     @Column()
     public userPassword: string;
     @Column()
-    public role:boolean;
+    public role: boolean;
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da13aff-9414-4739-9229-d50d0c16bfc0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/91dc1d4f-df81-4322-886f-f07676c18126.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/91dc1d4f-df81-4322-886f-f07676c18126.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -12,10 +11,9 @@
       <change beforePath="$PROJECT_DIR$/src/model/Category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Category.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Question.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Question.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User-Test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User-Test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/Router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/Router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/user-router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user-router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/category-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/category-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/user-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
       <recent name="D:\leson-2-CodeGym\BE22\demoPhotoApp" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.m:run">
+  <component name="RunManager" selected="npm.start:dev">
     <configuration name="m:g" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -107,10 +105,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.m:run" />
         <item itemvalue="npm.m:revert" />
         <item itemvalue="npm.m:g" />
-        <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +125,8 @@
       <workItem from="1678118554443" duration="638000" />
       <workItem from="1678152131407" duration="790000" />
       <workItem from="1678171231804" duration="8593000" />
-      <workItem from="1678181303836" duration="3427000" />
+      <workItem from="1678181303836" duration="12986000" />
+      <workItem from="1678237443608" duration="2872000" />
     </task>
     <servers />
   </component>
