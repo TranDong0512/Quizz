@@ -13,39 +13,39 @@ class UserController {
 
     register = async (req: Request, res: Response) => {
         let user = req.body
-        const userFind = await this.userService.findOneUserByUsername(user.username)
+        const userFind = await this.userService.findOneUserByUsername(user.userName)
         if(userFind.length !== 0) {
             return res.json({
                 mess: "Tài khoản đã tồn tại !!",
                 checkRegister: false
             })
         }else{
-            user.password = await bcrypt.hash(user.password, 10)
+            user.userPassword = await bcrypt.hash(user.userPassword, 10)
             await this.userService.register(user)
             return res.status(200).json({
                 mess: 'Đăng ký thành công !!',
                 checkRegister: true
-            })
+            })  
         }
     }
 
     login = async (req: Request, res: Response) => {
         let user = req.body
-        let userFind = await this.userService.findOneUserByUsername(user.username)
+        let userFind = await this.userService.findOneUserByUsername(user.userName)
         if (userFind.length == 0) {
             return res.status(200).json({
-                massage: 'User is not exist !'
+                message: 'User is not exist !'
             })
         } else {
-            let comparePassword = await bcrypt.compare(user.password, userFind[0].password)
+            let comparePassword = await bcrypt.compare(user.userPassword, userFind[0].userPassword)
             if (!comparePassword) {
                 return res.json({
-                    massage: 'Password is wrong!'
+                    message: 'Password is wrong!'
                 })
             } else {
                 let payload = {
                     id: userFind[0].id,
-                    username: userFind[0].username
+                    username: userFind[0].userName
                 }
                 let secret = 'quan'
                 let token = jwt.sign(payload, secret, {

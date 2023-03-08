@@ -1,6 +1,6 @@
 import { Category } from 'src/model/Category';
 import { AppDataSource } from './../data-source';
-class CategoryService {
+export class CategoryService {
     categoryRepository: any;
     constructor() {
         this.categoryRepository = AppDataSource.getRepository(Category)
